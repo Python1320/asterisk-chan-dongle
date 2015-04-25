@@ -62,7 +62,7 @@ $(PROJS): $(chan_dongles_so_OBJS) Makefile
 	mv $@ chan_dongle.so
 
 .c.o:
-	$(CC) $(CFLAGS) $(MAKE_DEPS) -o $@ -c $<
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(MAKE_DEPS) -o $@ -c $<
 
 tests: test/test1 test/parse
 
